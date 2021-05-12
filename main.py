@@ -71,11 +71,11 @@ async def on_message(message):
       await message.channel.send('Пока!')
 
 
-    if message.content.startswith(':Turn on krash')
+    if message.content.startswith(':Turn on krash'):
       await message.channel.send('ОК')
       await message.channel.send('Краш режим запущен!')
 
-    if message.content.startswith(':10 пинг')
+    if message.content.startswith(':10 пинг'):
       await message.channel.send('@everyone')
       await message.channel.send('@everyone')
       await message.channel.send('@everyone')
