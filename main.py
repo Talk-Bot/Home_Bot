@@ -35,7 +35,6 @@ async def on_message(message):
     if message.content.startswith(':Help'):
       await message.channel.send('Мои категории:')
       await message.channel.send(':Игровое общение')
-      await message.channel.send(':Пинг')
       await message.channel.send(':Поддержка')
 
 
@@ -76,8 +75,17 @@ async def on_message(message):
       await message.channel.send('ОК')
       await message.channel.send('Краш режим запущен!')
 
-
-
+    if message.content.startswith(':10 пинг')
+      await message.channel.send('@everyone')
+      await message.channel.send('@everyone')
+      await message.channel.send('@everyone')
+      await message.channel.send('@everyone')
+      await message.channel.send('@everyone')
+      await message.channel.send('@everyone')
+      await message.channel.send('@everyone')
+      await message.channel.send('@everyone')
+      await message.channel.send('@everyone')
+      await message.channel.send('@everyone')
 
 
 client.run(os.environ['TOKEN'])
