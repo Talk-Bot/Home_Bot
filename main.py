@@ -73,19 +73,13 @@ async def on_message(message):
 
     if message.content.startswith(':Turn on krash'):
       await message.channel.send('ОК')
-      await message.channel.send('Краш режим запущен!')
+      await message.channel.send('Краш режим запущен')
+      ping = input(':Пинг (Любое число)')
+      i = int(ping[6])
+      for i in range(i):
+        await message.channel.send("@everyone")
 
-    if message.content.startswith(':10 пинг'):
-      await message.channel.send('@everyone')
-      await message.channel.send('@everyone')
-      await message.channel.send('@everyone')
-      await message.channel.send('@everyone')
-      await message.channel.send('@everyone')
-      await message.channel.send('@everyone')
-      await message.channel.send('@everyone')
-      await message.channel.send('@everyone')
-      await message.channel.send('@everyone')
-      await message.channel.send('@everyone')
+
 
 
 client.run(os.environ['TOKEN'])
