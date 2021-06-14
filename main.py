@@ -90,10 +90,7 @@ async def on_message(message):
 
 
     
-      ping = input(':Пинг (Любое число)')
-        i = int(ping[6])
-        for i in range(i):
-          await message.channel.send("@everyone")
+      
 
 
 
