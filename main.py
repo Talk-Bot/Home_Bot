@@ -89,7 +89,7 @@ async def on_message(message):
       
 
     if message.content.startswith(ping = ':Пинг'):
-      i = int(ping[6])
+      i = int(ping[6:900])
       for i in range(i):
         await message.channel.send("@everyone")
 
