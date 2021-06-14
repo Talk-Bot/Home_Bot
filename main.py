@@ -88,7 +88,7 @@ async def on_message(message):
       await message.channel.send('Краш режим запущен')
       
 
-    if message.content.startswith(ping = ':Пинг'):
+    if message.content.startswith(ping = ':Пинг (любое число)'):
       i = int(ping[6:900])
       for i in range(i):
         await message.channel.send("@everyone")
