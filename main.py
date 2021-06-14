@@ -83,7 +83,7 @@ async def on_message(message):
       await message.channel.send('Пока!')
 
 
-    if message.content.startswith(':Turn on krash'):
+    if message.content.startswith(':Turn on crash'):
       await message.channel.send('ОК')
       await message.channel.send('Краш режим запущен')
       
