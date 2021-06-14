@@ -14,6 +14,18 @@ async def on_message(message):
     if message.author == client.user:
         return
 
+
+
+
+
+
+
+
+
+
+
+
+
     if message.content.startswith(':Привет'):
         await message.channel.send('qq')
         await message.channel.send('Меня зовут Home_Bot, я создан для развлечения и общения! Я надеюсь я смогу помочь твоему серверу!')
@@ -75,6 +87,13 @@ async def on_message(message):
       await message.channel.send('ОК')
       await message.channel.send('Краш режим запущен')
       
+
+
+    
+      ping = input(':Пинг (Любое число)')
+        i = int(ping[6])
+        for i in range(i):
+          await message.channel.send("@everyone")
 
 
 
