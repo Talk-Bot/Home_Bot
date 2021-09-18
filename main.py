@@ -88,9 +88,7 @@ async def on_message(message):
       await message.channel.send('Краш режим запущен')
       
     if message.content.startswith(':Пинг 10'):
-      await message.channel.send('@everyone')
+      await message.channel.send('@everyone'*10)
 
-    if message.content.startswith(':Пинг 100'):
-      await message.channel.send('@everyone')
 
 client.run(os.environ['TOKEN'])
