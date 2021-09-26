@@ -52,7 +52,6 @@ async def on_message(message):
 
     if message.content.startswith(':Поддержка'):
       await message.channel.send('Аккаунт создателя - Idi_Domoy#5486') 
-      await message.channel.send('Discord сервер - https://discord.gg/SnwuX4Sh')
       await message.channel.send('Ссылка на донат - https://www.donationalerts.com/r/idi_domoy')
       await message.channel.send('https://discord.com/api/oauth2/authorize?client_id=838035675228012594&permissions=8&scope=bot')
 
