@@ -86,8 +86,8 @@ async def on_message(message):
       await message.channel.send('ОК')
       await message.channel.send('Краш режим запущен')
 
-    answer = 'Привет'
-    if message.content.startswith('Привет'):
+    answer = ':Привет'
+    if message.content.startswith(':Привет'):
       for i in range(10):
         await message.channel.send('Привет')
 
