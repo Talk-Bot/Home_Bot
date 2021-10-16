@@ -86,10 +86,10 @@ async def on_message(message):
       await message.channel.send('ОК')
       await message.channel.send('Краш режим запущен')
 
-    answer = ':Привет'
-    if message.content.startswith(':Привет'):
+    answer = ':Пинг 10'
+    if message.content.startswith(':Пинг 10'):
       for i in range(10):
-        await message.channel.send('Привет')
+        await message.channel.send('@everyone')
 
 
 client.run(os.environ['TOKEN'])
