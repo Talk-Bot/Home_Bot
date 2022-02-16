@@ -75,7 +75,8 @@ async def on_message(message):
       else:
         await message.channel.send('Нет!')
 
-
+    if message.content.startswith('@Home_Bot'):
+      await message.channel.send('Иди нахуй!')
 
 
     if message.content.startswith(':Пока'):
