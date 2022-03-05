@@ -49,7 +49,12 @@ async def on_message(message):
       await message.channel.send(':Игровое общение')
       await message.channel.send(':Поддержка')
 
+    if message.content.startswith(":Бен"):
+    voicechannel = discord.utils.get(ctx.guild.channels, name='queue')
+    vc = await voicechannel.connect()
+    vc.play(discord.FFmpegPCMAudio("countdown.mp3"), after=lambda e: print('done', e))
 
+  
     if message.content.startswith(':Поддержка'):
       await message.channel.send('Аккаунт создателя - Idi_Domoy#5486') 
       await message.channel.send('Ссылка на донат - https://www.donationalerts.com/r/idi_domoy')
