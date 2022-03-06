@@ -53,7 +53,7 @@ async def on_message(message):
     
 voicechannel=discord.utils.get(ctx.guild.channels, name='queue')
     vc = await voicechannel.connect()
-    vc.play(discord.FFmpegPCMAudio("countdown.mp3"), after=lambda e: print('done', e))
+    
 
   
     if message.content.startswith(':Поддержка'):
