@@ -50,7 +50,8 @@ async def on_message(message):
       await message.channel.send(':Поддержка')
 
     if message.content.startswith(":Бен"):
-    voicechannel = discord.utils.get(ctx.guild.channels, name='queue')
+    
+voicechannel=discord.utils.get(ctx.guild.channels, name='queue')
     vc = await voicechannel.connect()
     vc.play(discord.FFmpegPCMAudio("countdown.mp3"), after=lambda e: print('done', e))
 
