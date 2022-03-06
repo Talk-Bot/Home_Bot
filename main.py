@@ -49,10 +49,8 @@ async def on_message(message):
       await message.channel.send(':Игровое общение')
       await message.channel.send(':Поддержка')
 
-    if message.content.startswith(":Бен"):
-    
-voicechannel=discord.utils.get(ctx.guild.channels, name='queue')
-    vc = await voicechannel.connect()
+    if message.content.startswith(':Бен')
+      await voicechannel.connect()
     
 
   
