@@ -49,8 +49,8 @@ async def on_message(message):
       await message.channel.send(':Игровое общение')
       await message.channel.send(':Поддержка')
 
-    if message.content.startswith(':Бен'):
-      await voicechannelonnect()
+    #if message.content.startswith(':Бен'):
+      #await voicechannelonnect()
  
 
 
