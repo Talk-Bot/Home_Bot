@@ -50,7 +50,7 @@ async def on_message(message):
       await message.channel.send(':Поддержка')
 
     if message.content.startswith(':Бен'):
-      await voicechannel.connect()
+      await 🎾Комната 1🐖.connect()
     
 
   
