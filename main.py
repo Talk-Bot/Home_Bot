@@ -63,7 +63,9 @@ async def on_message(message):
     if message.content.startswith(':Пинг'):
       await message.channel.send('@everyone')
 
-
+    async def on_message(message):
+    if message.author != client.user:
+        await message.channel.send(message.content[::-1])
 
     if message.content.startswith(':Игровое общение'):
       await message.channel.send(':Монетка - Игра основанная на игре Орёл-Решка!')
