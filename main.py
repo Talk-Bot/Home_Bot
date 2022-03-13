@@ -79,7 +79,10 @@ async def on_message(message):
 
     if message.content.startswith(':Игровое общение'):
       await message.channel.send(':Монетка - Игра основанная на игре Орёл-Решка!')
-      await message.channel.send(':Imp - вы задаёте бота вопрос не предатель ли ...')
+      await message.channel.send(':Imp...')
+      await message.channel.send(":Бен ...")
+      
+      
 
 
 
