@@ -42,8 +42,6 @@ async def on_message(message):
       else:
         await message.channel.send('Ты проиграл, сорян!')
 
-    
-
     if message.content.startswith(':Help'):
       await message.channel.send('Мои категории:')
       await message.channel.send(':Игровое общение')
