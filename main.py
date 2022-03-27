@@ -184,7 +184,7 @@ async def on_message(message):
       await message.channel.send('503 - 7 = 496 ')
       await message.channel.send('496 - 7 = 489 ')
       await message.channel.send('489 - 7 = 482 ')
-      await message.channel.send('82 - 7 = 475 ')
+      await message.channel.send('482 - 7 = 475 ')
       await message.channel.send('475 - 7 = 468 ')
       await message.channel.send('468 - 7 = 461 ')
       await message.channel.send('461 - 7 = 454 ')
