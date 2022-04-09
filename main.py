@@ -85,6 +85,8 @@ async def on_message(message):
     if message.content.startswith(':Рулетка'):
       win_number = 1
       current_number = randint(1,6)
+      if current_number != win_number:
+        await message.channel.send('Ты выйграл!')
       if current_number == win_number:
         await member.kick
 
