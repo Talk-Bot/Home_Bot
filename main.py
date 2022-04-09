@@ -82,8 +82,11 @@ async def on_message(message):
       await message.channel.send(':Imp...')
       await message.channel.send(":Бен ...")
       
-      
-
+    if message.content.startswith(':Рулетка'):
+      win_number = 1
+      current_number = randint(1,6)
+      if current_number == win_number:
+        await member.kick
 
 
     if message.content.startswith(':Imp'):
