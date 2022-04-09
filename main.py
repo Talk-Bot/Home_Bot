@@ -2,6 +2,7 @@ import discord
 import os
 from random import randint
 from time import sleep
+const Discord = require('discord.js')
 
 client = discord.Client()
 
