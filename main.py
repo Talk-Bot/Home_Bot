@@ -2,7 +2,6 @@ import discord
 import os
 from random import randint
 from time import sleep
-const Discord = require('discord.js')
 
 client = discord.Client()
 
@@ -82,8 +81,20 @@ async def on_message(message):
       await message.channel.send(':Монетка - Игра основанная на игре Орёл-Решка!')
       await message.channel.send(':Imp...')
       await message.channel.send(":Бен ...")
+
+
+    mistik = [294519237072912386] #ID пользователя которого должно кикать
+
+@bot.command
+async def on_message(message):
+  if message.content.startswith(':Рулетка'):
+      win_number = 1
+      current_number = randint(1,6)
+      if current_number != win_number:
+    async def kickm(ctx,member:discord.mistik):
+      await member.kick(mistik) 
       
-    if message.content.startswith(':Рулетка'):
+    #if message.content.startswith(':Рулетка'):
       win_number = 1
       current_number = randint(1,6)
       if current_number != win_number:
