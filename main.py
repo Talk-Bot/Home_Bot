@@ -83,7 +83,7 @@ async def on_message(message):
       await message.channel.send(":Бен ...")
 
 
-if message.content.startswith(':Рулетка'):
+    if message.content.startswith(':Рулетка'):
       win_number = 1
       current_number = randint(1,6)
       if current_number != win_number:
